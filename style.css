@@ -15,11 +15,11 @@ h1 {
   font-size: 44px;
   font-weight: 700;
   line-height: 120%;
+  padding-left: 3%;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  align: center;
 }
 
 #map {
