@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;700&display=swap');
+
 html {
   box-sizing: border-box;
   font-size: 1em;
@@ -6,6 +8,18 @@ html {
 body {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 120%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  align: center;
 }
 
 #map {
