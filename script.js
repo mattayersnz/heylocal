@@ -15,7 +15,7 @@ function initMap(){
       "Pine Tree!", -36.595541, 174.695866, "./icons/tree.svg", 42, 42
     ],
     [
-      'Another Pine Tree!', -36.595545, 174.695753, "./icons/tree.svg", 42, 42
+      "Pine Tree!", -36.595472, 174.695966, "./icons/tree.svg", 42, 42
     ]
   ]
 
