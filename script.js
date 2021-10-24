@@ -3,7 +3,7 @@ function initMap(){
     center: {lat: -36.594767, lng: 174.695967},
     zoom: 18,
     mapId: '1a0581c7287d35ef',
-    maptype: "satellite",
+    mapTypeId: 'satellite',
     mapTypeControl: false,
     fullscreenControl: false,
     streetViewControl: false
