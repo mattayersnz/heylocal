@@ -35,9 +35,22 @@ function initMap(){
     const infowindow = new google.maps.InfoWindow({
       content: currentMarker[0],
     });
+    
     marker.addListener("click", () => {
       infowindow.open(map, marker);
     });
 
+    google.maps.event.addListener(map, 'click', function(event) {
+      placeMarker(event.latLng);
+    });
   }
+}
+
+function placeMarker(location) {
+  var marker = new google.maps.Marker({
+      position: location,
+      map: map
+  });
+
+  map.setCenter(location);
 }
