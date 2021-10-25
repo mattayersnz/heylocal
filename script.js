@@ -35,7 +35,7 @@ function initMap(){
     const infowindow = new google.maps.InfoWindow({
       content: currentMarker[0],
     });
-    
+
     marker.addListener("click", () => {
       infowindow.open(map, marker);
     });
@@ -51,6 +51,4 @@ function placeMarker(location) {
       position: location,
       map: map
   });
-
-  map.setCenter(location);
 }
