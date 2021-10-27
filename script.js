@@ -10,17 +10,14 @@ function initMap(){
   });
 
   // marker: [name, lat, long, img url, scaledSize width, scaledSize height]
-  const markers = [
+  const initialMarkers = [
     [
       "Pine Tree!", -36.595541, 174.695866, "./markers/tree.svg", 42, 42
-    ],
-    [
-      "Pine Tree!", -36.595472, 174.695966, "./markers/tree.svg", 42, 42
     ]
   ]
 
-  for(let i=0; i<markers.length; i++){
-    const currentMarker = markers[i];
+  for(let i=0; i<initialMarkers.length; i++){
+    const currentMarker = initialMarkers[i];
 
     const marker = new google.maps.Marker({
       position: {lat: currentMarker[1], lng: currentMarker[2]},
@@ -39,16 +36,5 @@ function initMap(){
     marker.addListener("click", () => {
       infowindow.open(map, marker);
     });
-
-    google.maps.event.addListener(map, 'click', function(event) {
-      placeMarker(event.latLng);
-    });
   }
-}
-
-function placeMarker(location) {
-  var marker = new google.maps.Marker({
-      position: location,
-      map: map
-  });
 }
