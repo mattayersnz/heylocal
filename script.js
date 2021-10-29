@@ -13,6 +13,8 @@ function initMap(){
   const initialMarkers = [
     [
       "Pine Tree!", -36.595541, 174.695866, "./markers/tree.svg", 42, 42
+    ],
+    [ "Peach Tree!", -36.5812913, 174.6892932, "./markers/tree.svg", 42, 42
     ]
   ]
 
