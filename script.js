@@ -1,4 +1,5 @@
 function initMap(){
+
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -36.594767, lng: 174.695967},
     zoom: 18,
@@ -9,12 +10,26 @@ function initMap(){
     streetViewControl: false
   });
 
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
+        map.setCenter(pos);
+      }
+    );
+  }
+
   // marker: [name, lat, long, img url, scaledSize width, scaledSize height]
   const initialMarkers = [
     [
       "Pine Tree!", -36.595541, 174.695866, "./markers/tree.svg", 42, 42
     ],
     [ "Peach Tree!", -36.5812913, 174.6892932, "./markers/tree.svg", 42, 42
+    ],
+    [ "Something from Jay", -40.0844693, 175.4091203, "./markers/tree.svg", 42, 42
     ]
   ]
 
