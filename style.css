@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;900&display=swap');
 
 html {
   box-sizing: border-box;
@@ -11,9 +11,9 @@ body {
 }
 
 h1 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Overpass', monospace;
   font-size: 44px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 120%;
   padding-left: 3%;
   user-select: none;
@@ -26,8 +26,17 @@ h1 {
   height: 80vh;
 }
 
+.gm-style-iw-d {
+  font-family: 'Overpass', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 14px;
+  padding-top: 2px;
+}
+
 @media only screen and (max-width: 680px) {
   h1 {
     text-align: center;
+    font-size: 40px;
   }
 }
