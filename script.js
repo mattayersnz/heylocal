@@ -25,11 +25,11 @@ function initMap(){
   // marker: [name, lat, long, img url, scaledSize width, scaledSize height]
   const initialMarkers = [
     [
-      "Pine Tree!", -36.595541, 174.695866, "./markers/tree.svg", 42, 42
+      "Pine Tree!", -36.595541, 174.695866, "./markers/marker.svg", 42, 42
     ],
-    [ "Peach Tree!", -36.5812913, 174.6892932, "./markers/tree.svg", 42, 42
+    [ "Peach Tree!", -36.5812913, 174.6892932, "./markers/marker.svg", 42, 42
     ],
-    [ "Something from Jay", -40.0844693, 175.4091203, "./markers/tree.svg", 42, 42
+    [ "First thing from Jay", -40.0844693, 175.4091203, "./markers/marker.svg", 42, 42
     ]
   ]
 
